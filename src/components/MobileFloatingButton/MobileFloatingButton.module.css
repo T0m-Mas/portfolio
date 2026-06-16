@@ -1,0 +1,31 @@
+.button {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 16px 16px;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+  background-color: #333;
+}
+.button:active {
+  background-color: #555;
+  transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: flex;
+  }
+}

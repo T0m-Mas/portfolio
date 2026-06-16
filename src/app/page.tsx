@@ -1,7 +1,10 @@
+import HomeScreen from "@/screen/Home/HomeScreen";
+
+export const metadata = {
+  title: "Home",
+  description: "Welcome to my portfolio website!",
+};
+
 export default function Home() {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
+  return <HomeScreen />;
 }
