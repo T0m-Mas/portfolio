@@ -1,4 +1,4 @@
-import HomeScreen from "@/screen/Home/HomeScreen";
+import HomeScreen from "@/screen/Home";
 
 export const metadata = {
   title: "Home",

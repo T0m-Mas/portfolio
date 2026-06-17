@@ -43,5 +43,8 @@
         "description": "Design of modern and user-friendly interfaces."
       }
     }
+  },
+  "projectsScreen": {
+    "title": "Featured Projects"
   }
 }

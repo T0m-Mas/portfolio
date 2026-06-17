@@ -1,27 +1,27 @@
-.skill-card {
+.card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 16px;
-  width: 260px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  animation: spawn 0.5s ease-out forwards;
-}
-
-.skill-card-header {
-  display: flex;
   align-items: center;
   gap: 8px;
+  padding: 16px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  animation: spawn 0.5s ease-out;
 }
 
-.skill-card-header svg {
-  stroke: #ba0a0a;
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 90%;
+  margin: 32px 0px;
+  max-width: 280px;
 }
 
 @media (max-width: 568px) {
-  .skill-card {
+  .card {
     width: 100%;
   }
 }
