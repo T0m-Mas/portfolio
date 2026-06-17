@@ -5,16 +5,50 @@
 
 .title-container p {
   font-size: 28px;
+  animation: spawn 0.5s ease-out;
 }
 
 .title-container h1 {
   font-size: 48px;
   font-weight: bold;
   line-height: 0.9;
+  animation: spawn 0.5s ease-out;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  max-width: 1400px;
+}
+
+.bmo-image {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 180px;
+  opacity: 0.8;
+  transform: scaleX(-1);
+}
+
+.description {
+  animation: spawn 0.5s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .bmo-image {
+    display: none;
+  }
+}
+
+@keyframes spawn {
+  0% {
+    opacity: 0;
+    transform: translateX(+5%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

@@ -1,8 +1,26 @@
 import Link from "next/link";
 import styles from "./SideMenu.module.css";
 import classNames from "classnames";
+import {
+  LANGUAGE,
+  useLanguageContext,
+} from "@/context/LanguageContext/LanguageContext";
 
 const SideMenu: React.FC<{ open: boolean }> = ({ open }) => {
+  const {
+    t: {
+      sideMenu: {
+        home,
+        education,
+        featuredProjects,
+        technologies,
+        ...sideMenu
+      },
+    },
+    language,
+    setLanguage,
+  } = useLanguageContext();
+
   return (
     <div className={classNames(styles.container, { [styles.open]: open })}>
       <img
@@ -11,13 +29,21 @@ const SideMenu: React.FC<{ open: boolean }> = ({ open }) => {
         alt="Foto perfil"
       />
       <nav className={styles["menu"]}>
-        <Link href="/">Inicio</Link>
-        <Link href="/about">Proyectos Destacados</Link>
-        <Link href="/projects">Tecnologías</Link>
-        <Link href="/contact">Formación</Link>
+        <Link href="/">{home}</Link>
+        <Link href="/projects">{featuredProjects}</Link>
+        <Link href="/technologies">{technologies}</Link>
+        <Link href="/education">{education}</Link>
       </nav>
-      <div className={styles["contact-section"]}>
-        <p className={styles["contact-info"]}>Contacto:</p>
+      <div className={styles["end-section"]}>
+        <label htmlFor="language-select">{sideMenu.language}:</label>
+        <select
+          id="language-select"
+          onChange={(e) => setLanguage(e.target.value as unknown as LANGUAGE)}
+          value={language}
+        >
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
       </div>
     </div>
   );

@@ -5,9 +5,13 @@ const SkillCard: FC<{
   title: string;
   description: string;
   icon: React.ReactNode;
-}> = ({ title, description, icon }) => {
+  animationDelay?: number;
+}> = ({ title, description, icon, animationDelay }) => {
   return (
-    <div className={styles["skill-card"]}>
+    <div
+      className={styles["skill-card"]}
+      style={{ animationDelay: `${animationDelay}s` }}
+    >
       <div className={styles["skill-card-header"]}>
         {icon}
         <h3>{title}</h3>
