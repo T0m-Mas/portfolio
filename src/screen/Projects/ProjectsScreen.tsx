@@ -20,7 +20,7 @@ const HomeScreen = () => {
   const {
     title,
     description,
-    projects: { ambienteControlado },
+    projects: { ambienteControlado, worktrack, roomsafe, jardinesPatagonicos },
   } = getLocale(language);
 
   return (
@@ -32,6 +32,24 @@ const HomeScreen = () => {
           <ProjectCard
             logoSrc="/images/ambiente_controlado/logo.png"
             description={ambienteControlado.cardDescription}
+          />
+        </Link>
+        <Link href={"/projects/rf"}>
+          <ProjectCard
+            logoSrc="/images/roomsafe/logo.png"
+            description={roomsafe.cardDescription}
+          />
+        </Link>
+        <Link href={"/projects/wt"}>
+          <ProjectCard
+            logoSrc="/images/worktrack/logo.png"
+            description={worktrack.cardDescription}
+          />
+        </Link>
+        <Link href={"/projects/jp"}>
+          <ProjectCard
+            logoSrc="/images/jardines_patagonicos/logo.png"
+            description={jardinesPatagonicos.cardDescription}
           />
         </Link>
       </div>

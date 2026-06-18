@@ -4,6 +4,15 @@
   "projects": {
     "ambienteControlado": {
       "cardDescription": "Sistema encargado de recibir, almacenar, administrar y visualizar datos de distintos tipos de sensores "
+    },
+    "worktrack": {
+      "cardDescription": "Sistema de seguimiento de flota o visitas y administración de itinerarios"
+    },
+    "roomsafe": {
+      "cardDescription": "Sistema de trazabilidad de limpieza de habitaciones y/o ambientes"
+    },
+    "jardinesPatagonicos": {
+      "cardDescription": "Pagina institucional estática que muestra los servicios de la institución"
     }
   }
 }

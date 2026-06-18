@@ -20,6 +20,10 @@
   max-width: 280px;
 }
 
+.card:hover {
+  scale: 1.05;
+}
+
 @media (max-width: 568px) {
   .card {
     width: 100%;

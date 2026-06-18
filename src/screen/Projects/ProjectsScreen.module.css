@@ -2,3 +2,9 @@
   color: #ba0a0a;
   font-size: 48px;
 }
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
