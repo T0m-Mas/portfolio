@@ -5,21 +5,13 @@ import {
   LANGUAGE,
   useLanguageContext,
 } from "@/context/LanguageContext/LanguageContext";
+import getLocale from "./locale";
 
 const SideMenu: React.FC<{ open: boolean }> = ({ open }) => {
-  const {
-    t: {
-      sideMenu: {
-        home,
-        education,
-        featuredProjects,
-        technologies,
-        ...sideMenu
-      },
-    },
-    language,
-    setLanguage,
-  } = useLanguageContext();
+  const { language, setLanguage } = useLanguageContext();
+
+  const { home, education, featuredProjects, technologies, ...sideMenu } =
+    getLocale(language);
 
   return (
     <div className={classNames(styles.container, { [styles.open]: open })}>

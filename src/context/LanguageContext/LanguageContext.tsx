@@ -7,9 +7,6 @@ import {
   useState,
 } from "react";
 
-import es from "../../locale/es.json";
-import en from "../../locale/en.json";
-
 export enum LANGUAGE {
   EN = "en",
   ES = "es",
@@ -18,8 +15,7 @@ export enum LANGUAGE {
 const LanguageContext = createContext<{
   language: LANGUAGE;
   setLanguage: (language: LANGUAGE) => void;
-  t: typeof es;
-}>({ language: LANGUAGE.ES, setLanguage: () => {}, t: es });
+}>({ language: LANGUAGE.ES, setLanguage: () => {} });
 
 export const LanguageProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<LANGUAGE>(LANGUAGE.ES);
@@ -33,7 +29,6 @@ export const LanguageProvider: FC<{ children: ReactNode }> = ({ children }) => {
       value={{
         language,
         setLanguage,
-        t: language === LANGUAGE.ES ? es : en,
       }}
     >
       {children}

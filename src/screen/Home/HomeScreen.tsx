@@ -14,14 +14,12 @@ import {
   LANGUAGE,
   useLanguageContext,
 } from "@/context/LanguageContext/LanguageContext";
+import getLocale from "./locale";
 
 const HomeScreen = () => {
-  const {
-    language,
-    t: {
-      homeScreen: { description, skills },
-    },
-  } = useLanguageContext();
+  const { language } = useLanguageContext();
+
+  const { description, skills } = getLocale(language);
 
   return (
     <div className="screen">
