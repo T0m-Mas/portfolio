@@ -1,11 +1,11 @@
-import Link from "next/link";
-import styles from "./SideMenu.module.css";
-import classNames from "classnames";
 import {
   LANGUAGE,
   useLanguageContext,
 } from "@/context/LanguageContext/LanguageContext";
+import classNames from "classnames";
+import Link from "next/link";
 import getLocale from "./locale";
+import styles from "./SideMenu.module.css";
 
 const SideMenu: React.FC<{ open: boolean }> = ({ open }) => {
   const { language, setLanguage } = useLanguageContext();
@@ -17,7 +17,7 @@ const SideMenu: React.FC<{ open: boolean }> = ({ open }) => {
     <div className={classNames(styles.container, { [styles.open]: open })}>
       <img
         className={styles["profile-image"]}
-        src="/images/foto_perfil.jpg"
+        src="/images/foto_perfil"
         alt="Foto perfil"
       />
       <nav className={styles["menu"]}>

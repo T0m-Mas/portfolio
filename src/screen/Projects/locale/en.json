@@ -1,18 +1,11 @@
 {
-  "title": "Proyectos Destacados",
-  "description": "Estos son algunos de los proyectos que destaco:",
+  "title": "Featured Projects",
+  "description": "These are some of the projects I would like to highlight:",
   "projects": {
-    "ambienteControlado": {
-      "cardDescription": "Sistema encargado de recibir, almacenar, administrar y visualizar datos de distintos tipos de sensores "
-    },
-    "worktrack": {
-      "cardDescription": "Sistema de seguimiento de flota o visitas y administración de itinerarios"
-    },
-    "roomsafe": {
-      "cardDescription": "Sistema de trazabilidad de limpieza de habitaciones y/o ambientes"
-    },
-    "jardinesPatagonicos": {
-      "cardDescription": "Pagina institucional estática que muestra los servicios de la institución"
-    }
+    "ambienteControlado": "System responsible for receiving, storing, managing and displaying data from different types of sensors.",
+    "worktrack": "Fleet/salesperson tracking and route management system.",
+    "roomsafe": "Traceability system for cleaning rooms and/or environments.",
+    "jardinesPatagonicos": "Static institutional page that shows the services of the institution.",
+    "soaptrack": "Ticketing and alert system for the status of hand dispensers."
   }
 }

@@ -12,7 +12,10 @@
 }
 
 .profile-image {
+  width: 128px;
+  aspect-ratio: 1;
   border-radius: 100%;
+  background-color: #444;
 }
 
 .menu {
@@ -26,6 +29,10 @@
   text-decoration: none;
   font-size: 18px;
   text-align: center;
+}
+
+.menu a:hover {
+  color: #ba0a0a;
 }
 
 .end-section {
