@@ -1,4 +1,3 @@
-import HomeScreen from "@/screen/Home/HomeScreen";
 import ProjectsScreen from "@/screen/Projects";
 
 export const metadata = {
