@@ -1,3 +1,5 @@
+@import url(tokens.css);
+
 * {
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
@@ -8,6 +10,7 @@ body {
   padding: 0;
   font-family: var(--font-roboto), sans-serif;
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -27,19 +30,9 @@ h6 {
   padding: 0;
 }
 
-.content-container {
-  margin-left: 220px;
-}
-
 .screen {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 16px;
-}
-
-@media (max-width: 768px) {
-  .content-container {
-    margin-left: 0;
-  }
 }
