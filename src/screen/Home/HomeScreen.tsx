@@ -1,5 +1,8 @@
 "use client";
 import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
+import classNames from "classnames";
+import { MoveUpRight } from "lucide-react";
+import Link from "next/link";
 import styles from "./HomeScreen.module.css";
 import getLocale from "./locale";
 
@@ -25,6 +28,23 @@ const HomeScreen = () => {
             Creo interfaces modernas, APIs y sistemas que conectan datos,
             personas y dispositivos para resolver problemas reales.
           </p>
+          <div className={styles["buttons-container"]}>
+            <Link
+              href={"/projects"}
+              className={classNames(styles["button"], styles["button-primary"])}
+            >
+              Ver Proyectos <MoveUpRight />
+            </Link>
+            <Link
+              href={"/projects"}
+              className={classNames(
+                styles["button"],
+                styles["button-secondary"],
+              )}
+            >
+              Contactar
+            </Link>
+          </div>
         </div>
         <div className={styles["right-column"]}>
           <img src={"/images/ambiente_controlado/monitor_compacto.png"} />
