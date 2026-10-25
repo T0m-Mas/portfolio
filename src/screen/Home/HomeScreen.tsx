@@ -50,6 +50,7 @@ const HomeScreen = () => {
           <img src={"/images/ambiente_controlado/monitor_compacto.png"} />
         </div>
       </div>
+      <div className={styles["divider"]} />
     </div>
   );
 };

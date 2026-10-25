@@ -51,6 +51,7 @@
 .buttons-container {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -71,6 +72,12 @@
   color: var(--color-on-background);
   border: 2px solid var(--color-on-background);
   font-weight: 500;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-outline-variant);
 }
 
 @media (max-width: 1024px) {
@@ -96,5 +103,10 @@
   }
   .left-column .main-p {
     font-size: 4vw;
+  }
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
   }
 }
