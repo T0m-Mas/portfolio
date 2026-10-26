@@ -1,8 +1,14 @@
 "use client";
 import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
 import classNames from "classnames";
-import { MoveUpRight } from "lucide-react";
+import {
+  Database,
+  MonitorSmartphone,
+  MoveUpRight,
+  Settings,
+} from "lucide-react";
 import Link from "next/link";
+import SkillView from "./components/SkillView";
 import styles from "./HomeScreen.module.css";
 import getLocale from "./locale";
 
@@ -20,7 +26,7 @@ const HomeScreen = () => {
             <p className={styles["job"]}>Desarrollador Full Stack</p>
           </div>
           <h1>
-            Desarrollo.
+            Desarrollo de Software.
             <br />
             <span>De punta a punta.</span>
           </h1>
@@ -51,6 +57,25 @@ const HomeScreen = () => {
         </div>
       </div>
       <div className={styles["divider"]} />
+      <div className={styles["skills-row"]}>
+        <SkillView
+          icon={<MonitorSmartphone size={38} />}
+          title="Interfaces"
+          description="modernas y efectivas"
+        />
+        <div className={styles["divider-vertical"]} />
+        <SkillView
+          icon={<Settings size={38} />}
+          title="APIs y Servicios"
+          description="escalables"
+        />
+        <div className={styles["divider-vertical"]} />
+        <SkillView
+          icon={<Database size={38} />}
+          title="Datos y Despliegue"
+          description="en la nube"
+        />
+      </div>
     </div>
   );
 };

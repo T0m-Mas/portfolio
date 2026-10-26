@@ -33,8 +33,8 @@
 }
 
 .left-column h1 {
-  font-size: 56px;
-  line-height: 56px;
+  font-size: 42px;
+  line-height: 42px;
 }
 
 .name-container .job,
@@ -80,10 +80,22 @@
   background-color: var(--color-outline-variant);
 }
 
+.divider-vertical {
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-outline-variant);
+}
+
+.skills-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1024px) {
   .left-column h1 {
-    font-size: 4.5vw;
-    line-height: 4.5vw;
+    font-size: 4vw;
+    line-height: 4vw;
   }
   .left-column .main-p {
     font-size: 2.5vw;
@@ -98,8 +110,8 @@
     width: 100%;
   }
   .left-column h1 {
-    font-size: 11vw;
-    line-height: 11vw;
+    font-size: 8vw;
+    line-height: 8vw;
   }
   .left-column .main-p {
     font-size: 4vw;
@@ -108,5 +120,8 @@
     display: flex;
     flex-direction: column;
     padding: 16px 0px;
+  }
+  .divider-vertical {
+    display: none;
   }
 }
