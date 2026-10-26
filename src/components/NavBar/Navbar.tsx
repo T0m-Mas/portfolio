@@ -1,5 +1,6 @@
+import LanguageSelector from "./components/LanguageSelector";
 import Logo from "./components/Logo";
-import { Menu } from "./components/Menu";
+import { Menu } from "./components/Menu/Menu";
 import styles from "./NavBar.module.css";
 
 const Navbar = () => {
@@ -7,7 +8,10 @@ const Navbar = () => {
     <div className={styles["container"]}>
       <div className={styles["content"]}>
         <Logo />
-        <Menu />
+        <div className={styles["language-menu-row"]}>
+          <LanguageSelector />
+          <Menu />
+        </div>
       </div>
       <div className={styles["divider"]} />
     </div>

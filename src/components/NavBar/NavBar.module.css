@@ -19,3 +19,9 @@
   height: 1px;
   background-color: var(--color-outline-variant);
 }
+
+.language-menu-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
