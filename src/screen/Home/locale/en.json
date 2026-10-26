@@ -1,38 +1,22 @@
 {
   "title": "FullStack Developer",
-  "description": "During my career, I acquired various skills in different areas of programming:",
-  "skills": {
-    "web": {
-      "title": "Web",
-      "description": "Development of custom websites integrating APIs and microservices."
+  "job1": "Software Development.",
+  "job2": "Edge to Edge.",
+  "description": "I create modern interfaces, APIs, and systems that connect data, people, and devices to solve real problems.",
+  "projectsButton": "See Projects",
+  "contactButton": "Contact",
+  "skills": [
+    {
+      "title": "Interfaces",
+      "description": "modern and effective"
     },
-    "server": {
-      "title": "Server",
-      "description": "Development of APIs and microservices with different connection protocols."
+    {
+      "title": "APIs and Services",
+      "description": "scalable"
     },
-    "android": {
-      "title": "Android",
-      "description": "Development of native applications for android devices."
-    },
-    "desktop": {
-      "title": "Desktop",
-      "description": "Development of desktop applications with modern interfaces."
-    },
-    "database": {
-      "title": "Database",
-      "description": "Design and management of relational and non-relational databases."
-    },
-    "deployment": {
-      "title": "Deployment",
-      "description": "Deployment of applications on third-party cloud servers."
-    },
-    "machineLearning": {
-      "title": "Machine Learning",
-      "description": "Training of models for real-time object detection."
-    },
-    "design": {
-      "title": "Design",
-      "description": "Design of modern and user-friendly interfaces."
+    {
+      "title": "Data and Deployment",
+      "description": "in the cloud"
     }
-  }
+  ]
 }

@@ -1,13 +1,22 @@
 "use client";
 
+import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
 import classNames from "classnames";
 import { Menu as MenuIcon, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FC, useState } from "react";
+import getLocale from "./locale";
 import styles from "./Menu.module.css";
 
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const { language } = useLanguageContext();
+
+  const locale = getLocale(language);
+
+  const path = usePathname();
 
   return (
     <div className={styles["menu-wrapper"]}>
@@ -17,7 +26,9 @@ export const Menu = () => {
         onClick={() => setIsOpen((open) => !open)}
         aria-expanded={isOpen}
         aria-controls="main-navigation"
-        aria-label={isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+        aria-label={
+          isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"
+        }
       >
         {isOpen ? <X aria-hidden="true" /> : <MenuIcon aria-hidden="true" />}
       </button>
@@ -27,10 +38,30 @@ export const Menu = () => {
           [styles["nav-container-open"]]: isOpen,
         })}
       >
-        <MenuItem href="/" label="Inicio" selected onClick={() => setIsOpen(false)} />
-        <MenuItem href="/" label="Proyectos" onClick={() => setIsOpen(false)} />
-        <MenuItem href="/" label="Tecnologías" onClick={() => setIsOpen(false)} />
-        <MenuItem href="/" label="Contacto" onClick={() => setIsOpen(false)} />
+        <MenuItem
+          href="/"
+          label={locale.start}
+          selected={path === "/"}
+          onClick={() => setIsOpen(false)}
+        />
+        <MenuItem
+          href="/projects"
+          selected={path === "/projects"}
+          label={locale.projects}
+          onClick={() => setIsOpen(false)}
+        />
+        <MenuItem
+          href="/technologies"
+          selected={path === "/technologies"}
+          label={locale.technologies}
+          onClick={() => setIsOpen(false)}
+        />
+        <MenuItem
+          href="/contact"
+          selected={path === "/contact"}
+          label={locale.contact}
+          onClick={() => setIsOpen(false)}
+        />
       </nav>
     </div>
   );

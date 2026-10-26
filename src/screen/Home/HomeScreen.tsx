@@ -15,7 +15,7 @@ import getLocale from "./locale";
 const HomeScreen = () => {
   const { language } = useLanguageContext();
 
-  const { description, skills } = getLocale(language);
+  const locale = getLocale(language);
 
   return (
     <div className="screen">
@@ -23,23 +23,20 @@ const HomeScreen = () => {
         <div className={styles["left-column"]}>
           <div className={styles["name-container"]}>
             <p className={styles["name"]}>Tomás Masotta</p>
-            <p className={styles["job"]}>Desarrollador Full Stack</p>
+            <p className={styles["job"]}>{locale.title}</p>
           </div>
           <h1>
-            Desarrollo de Software.
+            {locale.job1}
             <br />
-            <span>De punta a punta.</span>
+            <span>{locale.job2}</span>
           </h1>
-          <p className={styles["main-p"]}>
-            Creo interfaces modernas, APIs y sistemas que conectan datos,
-            personas y dispositivos para resolver problemas reales.
-          </p>
+          <p className={styles["main-p"]}>{locale.description}</p>
           <div className={styles["buttons-container"]}>
             <Link
               href={"/projects"}
               className={classNames(styles["button"], styles["button-primary"])}
             >
-              Ver Proyectos <MoveUpRight />
+              {locale.projectsButton} <MoveUpRight />
             </Link>
             <Link
               href={"/projects"}
@@ -48,7 +45,7 @@ const HomeScreen = () => {
                 styles["button-secondary"],
               )}
             >
-              Contactar
+              {locale.contactButton}
             </Link>
           </div>
         </div>
@@ -60,20 +57,20 @@ const HomeScreen = () => {
       <div className={styles["skills-row"]}>
         <SkillView
           icon={<MonitorSmartphone size={38} />}
-          title="Interfaces"
-          description="modernas y efectivas"
+          title={locale.skills[0].title}
+          description={locale.skills[0].description}
         />
         <div className={styles["divider-vertical"]} />
         <SkillView
           icon={<Settings size={38} />}
-          title="APIs y Servicios"
-          description="escalables"
+          title={locale.skills[1].title}
+          description={locale.skills[1].description}
         />
         <div className={styles["divider-vertical"]} />
         <SkillView
           icon={<Database size={38} />}
-          title="Datos y Despliegue"
-          description="en la nube"
+          title={locale.skills[2].title}
+          description={locale.skills[2].description}
         />
       </div>
     </div>

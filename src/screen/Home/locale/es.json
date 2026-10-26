@@ -1,38 +1,22 @@
 {
   "title": "Desarrollador FullStack",
-  "description": "Durante mi carrera adquirí varias habilidades en distintos ámbitos de la programación:",
-  "skills": {
-    "web": {
-      "title": "Web",
-      "description": "Desarrollo de paginas personalizadas integrando APIs y microservicios."
+  "job1": "Desarrollo de Software.",
+  "job2": "De punta a punta.",
+  "description": "Creo interfaces modernas, APIs y sistemas que conectan datos, personas y dispositivos para resolver problemas reales.",
+  "projectsButton": "Ver Proyectos",
+  "contactButton": "Contactar",
+  "skills": [
+    {
+      "title": "Interfaces",
+      "description": "modernas y efectivas"
     },
-    "server": {
-      "title": "Server",
-      "description": "Desarrollo de APIs y Microservicios con distintos protocolos de conexión."
+    {
+      "title": "APIs y Servicios",
+      "description": "escalables"
     },
-    "android": {
-      "title": "Android",
-      "description": "Desarrollo de Aplicaciones nativas para dispositivos android."
-    },
-    "desktop": {
-      "title": "Desktop",
-      "description": "Desarrollo de aplicaciones de escritorio con interfaces modernas"
-    },
-    "database": {
-      "title": "Base de Datos",
-      "description": "Diseño y administración de bases de datos relacionales y no relacionales."
-    },
-    "deployment": {
-      "title": "Despliegue",
-      "description": "Despliegue de aplicaciones en servidores en la nube de terceros "
-    },
-    "machineLearning": {
-      "title": "Machine Learning",
-      "description": "Entrenamiento de modelos de detección de objetos en tiempo real"
-    },
-    "design": {
-      "title": "Diseño",
-      "description": "Diseño de interfaces modernas y amigables para el usuario"
+    {
+      "title": "Datos y Despliegue",
+      "description": "en la nube"
     }
-  }
+  ]
 }

@@ -1,0 +1,12 @@
+.p {
+  font-size: 12px;
+}
+
+.p span {
+  cursor: pointer;
+}
+
+.p span:hover,
+span.selected {
+  color: var(--color-primary);
+}
