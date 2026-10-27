@@ -1,65 +1,37 @@
 "use client";
 import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
-import Link from "next/link";
+import Heading from "./components/Heading";
 import ProjectCard from "./components/ProjectCard";
-import getLocale from "./locale";
 import styles from "./ProjectsScreen.module.css";
 
 const HomeScreen = () => {
   const { language } = useLanguageContext();
 
-  const {
-    title,
-    description,
-    projects: {
-      ambienteControlado,
-      worktrack,
-      roomsafe,
-      jardinesPatagonicos,
-      soaptrack,
-    },
-  } = getLocale(language);
-
   return (
     <div className="screen">
-      <h1 className={styles.title}>{title}</h1>
-      <p>{description}</p>
-      <div className={styles.wrapper}>
-        <Link href={"/projects/ac"}>
-          <ProjectCard
-            logoSrc="/images/ambiente_controlado/logo.png"
-            description={ambienteControlado}
-            animationDelay={0}
-          />
-        </Link>
-        <Link href={"/projects/rf"}>
-          <ProjectCard
-            logoSrc="/images/roomsafe/logo.png"
-            description={roomsafe}
-            animationDelay={0.1}
-          />
-        </Link>
-        <Link href={"/projects/wt"}>
-          <ProjectCard
-            logoSrc="/images/worktrack/logo.png"
-            description={worktrack}
-            animationDelay={0.2}
-          />
-        </Link>
-        <Link href={"/projects/jp"}>
-          <ProjectCard
-            logoSrc="/images/jardines_patagonicos/logo.png"
-            description={jardinesPatagonicos}
-            animationDelay={0.3}
-          />
-        </Link>
-        <Link href={"/projects/st"}>
-          <ProjectCard
-            logoSrc="/images/soaptrack/logo.png"
-            description={soaptrack}
-            animationDelay={0.4}
-          />
-        </Link>
+      <Heading />
+      <div className={styles["list"]}>
+        <ProjectCard
+          coverSrc="/images/ambiente_controlado/cover.png"
+          logoSrc="/images/ambiente_controlado/logo.png"
+          description="Sistema encargado de recibir, almacenar, administrar y visualizar datos de distintos tipos de sensores."
+          highlight
+        />
+        <ProjectCard
+          coverSrc="/images/worktrack/cover.png"
+          logoSrc="/images/worktrack/logo.png"
+          description="Sistema de seguimiento de flota/vendedores y administración de itinerarios."
+        />
+        <ProjectCard
+          coverSrc="/images/roomsafe/cover.png"
+          logoSrc="/images/roomsafe/logo.png"
+          description="Sistema de trazabilidad de limpieza de habitaciones y/o ambientes."
+        />
+        <ProjectCard
+          coverSrc="/images/soaptrack/cover.png"
+          logoSrc="/images/soaptrack/logo.png"
+          description="Sistema de tickets y alertas sobre el estado de dispensadores de mano."
+        />
       </div>
     </div>
   );

@@ -1,18 +1,24 @@
+import classNames from "classnames";
 import { FC } from "react";
 import styles from "./ProjectCard.module.css";
 
 const ProjectCard: FC<{
+  coverSrc: string;
   logoSrc: string;
   description: string;
-  animationDelay?: number;
-}> = ({ description, logoSrc, animationDelay }) => {
+  highlight?: boolean;
+}> = ({ coverSrc, logoSrc, description, highlight = false }) => {
   return (
     <div
-      className={styles["card"]}
-      style={{ animationDelay: `${animationDelay}s` }}
+      className={classNames(styles["card-container"], {
+        [styles["highlight"]]: highlight,
+      })}
     >
-      <img className={styles["logo"]} src={logoSrc} />
-      <p>{description}</p>
+      <img src={coverSrc} className={styles["cover"]} />
+      <div className={styles["content"]}>
+        <img src={logoSrc} className={styles["logo"]} />
+        <p className={styles["description"]}>{description}</p>
+      </div>
     </div>
   );
 };
