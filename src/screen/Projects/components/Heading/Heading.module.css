@@ -1,3 +1,9 @@
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .label {
   font-size: 14px;
   text-transform: uppercase;
@@ -7,9 +13,16 @@
 
 .heading-container h1 {
   font-size: 42px;
-  line-height: 52px;
+  line-height: 42px;
 }
 
 .heading-container span {
   color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .heading-container h1 {
+    font-size: 7vw;
+    line-height: 7vw;
+  }
 }

@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid var(--color-outline-variant);
+  border-radius: 16px;
+  gap: 16px;
+}
+
+.title-container {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  color: var(--color-primary);
+  align-items: center;
+}
+
+.title-container h4 {
+  color: var(--color-on-background);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wrapper span {
+  background-color: var(--color-surface);
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+}

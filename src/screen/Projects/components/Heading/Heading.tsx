@@ -1,6 +1,12 @@
+import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
+import getLocale from "../../locale";
 import styles from "./Heading.module.css";
 
 const Heading = () => {
+  const { language } = useLanguageContext();
+
+  const locale = getLocale(language);
+
   return (
     <div className={styles["heading-container"]}>
       <p className={styles["label"]}>Proyectos Destacados</p>

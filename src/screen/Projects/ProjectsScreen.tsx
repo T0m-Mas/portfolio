@@ -2,10 +2,12 @@
 import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
 import Heading from "./components/Heading";
 import ProjectCard from "./components/ProjectCard";
+import getLocale from "./locale";
 import styles from "./ProjectsScreen.module.css";
 
 const HomeScreen = () => {
   const { language } = useLanguageContext();
+  const locale = getLocale(language);
 
   return (
     <div className="screen">
