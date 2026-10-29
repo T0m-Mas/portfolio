@@ -1,0 +1,20 @@
+.heading { display: flex; flex-direction: column; gap: 8px; }
+.eyebrow { font-size: 14px; text-transform: uppercase; font-weight: 500; opacity: 0.7; }
+.heading h1 { font-size: 42px; line-height: 42px; }
+.heading h1 span { color: var(--color-primary); }
+.form { display: flex; flex-direction: column; gap: 16px; width: 100%; min-width: 0; padding: 16px; background: var(--color-background); border: 1px solid var(--color-outline-variant); border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+.names { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.form label { display: flex; flex-direction: column; gap: 8px; font-weight: 500; }
+.form input, .form textarea { width: 100%; min-width: 0; border: 1px solid var(--color-outline-variant); border-radius: 8px; padding: 13px 14px; background: var(--color-background); color: var(--color-on-background); font: inherit; }
+.form textarea { resize: vertical; min-height: 150px; }
+.form input:focus-visible, .form textarea:focus-visible, .form button:focus-visible, .direct a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+.form button { display: flex; align-items: center; justify-content: center; gap: 8px; align-self: flex-start; background: var(--color-primary); color: var(--color-on-primary); border: 0; border-radius: 8px; padding: 16px 32px; font: inherit; font-weight: 500; cursor: pointer; }
+.form button:disabled { opacity: 0.65; cursor: wait; }
+.note, .direct { font-size: 0.875rem; line-height: 1.6; color: var(--color-on-surface); }
+.direct { margin-bottom: 32px; }
+.direct a { text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.success { display: flex; gap: 8px; align-items: center; line-height: 1.5; }
+.error { color: var(--color-primary); line-height: 1.5; }
+.trap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 768px) { .heading h1 { font-size: 7vw; line-height: 7vw; } }
+@media (max-width: 540px) { .names { grid-template-columns: 1fr; } .form button { width: 100%; } }

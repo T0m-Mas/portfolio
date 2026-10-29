@@ -27,7 +27,7 @@ export const Menu = () => {
         aria-expanded={isOpen}
         aria-controls="main-navigation"
         aria-label={
-          isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"
+          isOpen ? "Cerrar menÃº de navegaciÃ³n" : "Abrir menÃº de navegaciÃ³n"
         }
       >
         {isOpen ? <X aria-hidden="true" /> : <MenuIcon aria-hidden="true" />}

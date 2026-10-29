@@ -10,23 +10,29 @@ const LanguageSelector = () => {
 
   return (
     <p className={styles["p"]}>
-      <span
+      <button
+        type="button"
         className={classNames({
           [styles["selected"]]: language === LANGUAGE.ES,
         })}
+        aria-label="Español"
+        aria-pressed={language === LANGUAGE.ES}
         onClick={() => setLanguage(LANGUAGE.ES)}
       >
         ES
-      </span>{" "}
+      </button>{" "}
       /{" "}
-      <span
+      <button
+        type="button"
         className={classNames({
           [styles["selected"]]: language === LANGUAGE.EN,
         })}
+        aria-label="English"
+        aria-pressed={language === LANGUAGE.EN}
         onClick={() => setLanguage(LANGUAGE.EN)}
       >
         EN
-      </span>
+      </button>
     </p>
   );
 };

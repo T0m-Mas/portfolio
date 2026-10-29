@@ -2,11 +2,24 @@
   font-size: 12px;
 }
 
-.p span {
+.p button {
   cursor: pointer;
 }
 
-.p span:hover,
-span.selected {
+.p button:hover,
+.p button.selected {
   color: var(--color-primary);
+}
+
+.p button {
+  border: 0;
+  padding: 2px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.p button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
 }

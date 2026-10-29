@@ -1,8 +1,8 @@
 import HomeScreen from "@/screen/Home";
 
 export const metadata = {
-  title: "Home",
-  description: "Welcome to my portfolio website!",
+  title: "Portfolio - T0m-Mas",
+  description: "Desarrollador Fullstack",
 };
 
 export default function Home() {

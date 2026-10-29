@@ -1,11 +1,20 @@
 {
-  "title": "Featured Projects",
-  "description": "These are some of the projects I would like to highlight:",
-  "projects": {
-    "ambienteControlado": "System responsible for receiving, storing, managing and displaying data from different types of sensors.",
-    "worktrack": "Fleet/salesperson tracking and route management system.",
-    "roomsafe": "Traceability system for cleaning rooms and/or environments.",
-    "jardinesPatagonicos": "Static institutional page that shows the services of the institution.",
-    "soaptrack": "Ticketing and alert system for the status of hand dispensers."
-  }
+  "headingLabel": "Featured projects",
+  "headingTitle1": "Selected",
+  "headingTitle2": "projects",
+  "headingDescription": "Real systems for different contexts and needs",
+  "projects": [
+    {
+      "description": "A monitoring system that receives, stores, and organizes data from different types of sensors. It brings measurements together in an interface for browsing and visualization, making it easier to track environmental conditions and interpret recorded information."
+    },
+    {
+      "description": "A fleet and sales representative tracking system with centralized itinerary management. It organizes route information in one place to support activity planning and make field operations easier to follow."
+    },
+    {
+      "description": "A system for tracing cleaning activities in rooms and shared spaces. It organizes cleaning task information so teams can review and follow up on the work performed in each space, with a record they can consult to understand its history."
+    },
+    {
+      "description": "A ticketing and alert system for monitoring the status of hand hygiene dispensers. It brings notifications and incidents together to support follow-up and equipment servicing, connecting information about each dispenser with tasks that need attention."
+    }
+  ]
 }

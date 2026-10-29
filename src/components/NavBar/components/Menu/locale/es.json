@@ -1,6 +1,8 @@
 {
   "start": "Inicio",
   "projects": "Proyectos",
-  "technologies": "Tecnologías",
-  "contact": "Contacto"
+  "technologies": "Tecnologí­as",
+  "contact": "Contacto",
+  "openMenu": "Abrir menú de navegación",
+  "closeMenu": "Cerrar menú de navegación"
 }
