@@ -39,7 +39,7 @@ const HomeScreen = () => {
               {locale.projectsButton} <MoveUpRight />
             </Link>
             <Link
-              href={"/projects"}
+              href={"/contact"}
               className={classNames(
                 styles["button"],
                 styles["button-secondary"],
