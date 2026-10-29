@@ -1,3 +1,6 @@
+"use client";
+import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
+import getLocale from "./locale";
 import {
   Bot,
   Cloud,
@@ -12,51 +15,53 @@ import TechCard from "./components/TechCard";
 import styles from "./TechnologiesScreen.module.css";
 
 const TechnologiesScreen = () => {
+  const { language } = useLanguageContext();
+  const locale = getLocale(language);
   return (
     <div className="screen">
       <Heading />
       <div className={styles["wrapper"]}>
         <TechCard
           icon={<Earth size={32} />}
-          title="Web"
-          description="Interfaces modernas, rápidas y escalables"
+          title={locale.cards[0].title}
+          description={locale.cards[0].description}
           items={["React", "Next", "TypeScript", "JavaScript"]}
         />
         <TechCard
           icon={<Server size={32} />}
-          title="Backend"
-          description="APIs y servicios que integran distintos sistemas"
+          title={locale.cards[1].title}
+          description={locale.cards[1].description}
           items={["Node", "TypeScript", "JavaScript", "Python"]}
         />
         <TechCard
           icon={<MonitorCheck size={32} />}
-          title="Desktop"
-          description="Diseño de aplicaciones eficaces e intuitivas"
+          title={locale.cards[2].title}
+          description={locale.cards[2].description}
           items={["Flet", "Electron", "C#"]}
         />
         <TechCard
           icon={<Smartphone size={32} />}
-          title="Mobile"
-          description="Aplicaciones nativas para android"
+          title={locale.cards[3].title}
+          description={locale.cards[3].description}
           items={["Kotlin", "Jetpack Compose", "React-Native"]}
         />
         <TechCard
           icon={<Database size={32} />}
-          title="Datos"
-          description="Experiencia con bases de datos relacionales y no relacionales"
+          title={locale.cards[4].title}
+          description={locale.cards[4].description}
           items={["MySQL", "MongoDB", "SQLite"]}
         />
         <TechCard
           icon={<Bot size={32} />}
-          title="Machine Learning"
-          description="Detección de objetos, entrenamiento de modelos"
+          title={locale.cards[5].title}
+          description={locale.cards[5].description}
           items={["Yolo", "Python"]}
         />
         <TechCard
           icon={<Cloud size={32} />}
-          title="Despliegue"
-          description="Implementación de aplicaciones en servidores en la nube"
-          items={["Servicios en la nube"]}
+          title={locale.cards[6].title}
+          description={locale.cards[6].description}
+          items={[locale.cloudServices]}
         />
       </div>
     </div>

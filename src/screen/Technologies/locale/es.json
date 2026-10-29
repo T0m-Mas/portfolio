@@ -1,0 +1,38 @@
+{
+  "headingLabel": "Tecnologías",
+  "headingTitle1": "Herramientas para",
+  "headingTitle2": "convertir ideas en",
+  "headingAccent": "Soluciones",
+  "headingDescription": "Trabajo con un stack moderno para desarrollar interfaces, APIs, gestionar datos y desplegar aplicaciones en distintos entornos",
+  "cards": [
+    {
+      "title": "Web",
+      "description": "Interfaces modernas, rápidas y escalables"
+    },
+    {
+      "title": "Backend",
+      "description": "APIs y servicios que integran distintos sistemas"
+    },
+    {
+      "title": "Desktop",
+      "description": "Diseño de aplicaciones eficaces e intuitivas"
+    },
+    {
+      "title": "Mobile",
+      "description": "Aplicaciones nativas para Android"
+    },
+    {
+      "title": "Datos",
+      "description": "Experiencia con bases de datos relacionales y no relacionales"
+    },
+    {
+      "title": "Machine Learning",
+      "description": "Detección de objetos y entrenamiento de modelos"
+    },
+    {
+      "title": "Despliegue",
+      "description": "Implementación de aplicaciones en servidores en la nube"
+    }
+  ],
+  "cloudServices": "Servicios en la nube"
+}

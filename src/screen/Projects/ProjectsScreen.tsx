@@ -16,23 +16,23 @@ const HomeScreen = () => {
         <ProjectCard
           coverSrc="/images/ambiente_controlado/cover.png"
           logoSrc="/images/ambiente_controlado/logo.png"
-          description="Sistema encargado de recibir, almacenar, administrar y visualizar datos de distintos tipos de sensores."
+          description={locale.projects[0].description}
           highlight
         />
         <ProjectCard
           coverSrc="/images/worktrack/cover.png"
           logoSrc="/images/worktrack/logo.png"
-          description="Sistema de seguimiento de flota/vendedores y administración de itinerarios."
+          description={locale.projects[1].description}
         />
         <ProjectCard
           coverSrc="/images/roomsafe/cover.png"
           logoSrc="/images/roomsafe/logo.png"
-          description="Sistema de trazabilidad de limpieza de habitaciones y/o ambientes."
+          description={locale.projects[2].description}
         />
         <ProjectCard
           coverSrc="/images/soaptrack/cover.png"
           logoSrc="/images/soaptrack/logo.png"
-          description="Sistema de tickets y alertas sobre el estado de dispensadores de mano."
+          description={locale.projects[3].description}
         />
       </div>
     </div>

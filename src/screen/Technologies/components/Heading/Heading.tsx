@@ -1,17 +1,18 @@
+import { useLanguageContext } from "@/context/LanguageContext/LanguageContext";
+import getLocale from "../../locale";
 import styles from "./Heading.module.css";
 
 const Heading = () => {
+  const { language } = useLanguageContext();
+  const locale = getLocale(language);
   return (
     <div className={styles["heading-container"]}>
-      <p className={styles["label"]}>Tecnologías</p>
+      <p className={styles["label"]}>{locale.headingLabel}</p>
       <h1>
-        Herramientas para
-        <br /> convertir ideas en <span>Soluciones</span>
+        {locale.headingTitle1}
+        <br /> {locale.headingTitle2} <span>{locale.headingAccent}</span>
       </h1>
-      <p className={styles["description"]}>
-        Trabajo con un stack moderno para desarrollar interfaces, APIs,
-        gestionar datos <br /> y desplegar aplicaciones en distintos entornos
-      </p>
+      <p className={styles["description"]}>{locale.headingDescription}</p>
     </div>
   );
 };

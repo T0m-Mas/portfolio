@@ -1,0 +1,38 @@
+{
+  "headingLabel": "Technologies",
+  "headingTitle1": "Tools to",
+  "headingTitle2": "turn ideas into",
+  "headingAccent": "Solutions",
+  "headingDescription": "I work with a modern stack to build interfaces and APIs, manage data, and deploy applications across different environments",
+  "cards": [
+    {
+      "title": "Web",
+      "description": "Modern, fast, and scalable interfaces"
+    },
+    {
+      "title": "Backend",
+      "description": "APIs and services that connect different systems"
+    },
+    {
+      "title": "Desktop",
+      "description": "Effective and intuitive application design"
+    },
+    {
+      "title": "Mobile",
+      "description": "Native applications for Android"
+    },
+    {
+      "title": "Data",
+      "description": "Experience with relational and non-relational databases"
+    },
+    {
+      "title": "Machine Learning",
+      "description": "Object detection and model training"
+    },
+    {
+      "title": "Deployment",
+      "description": "Deploying applications to cloud servers"
+    }
+  ],
+  "cloudServices": "Cloud services"
+}

@@ -3,12 +3,18 @@
   "headingTitle1": "Proyectos",
   "headingTitle2": "seleccionados",
   "headingDescription": "Sistemas reales para distintos contextos y necesidades",
-  "proyects": [
+  "projects": [
     {
-      "description": "Sistema encargado de recibir, almacenar, administrar y visualizar datos de distintos tipos de sensores."
+      "description": "Sistema de monitoreo que recibe, almacena y organiza datos de distintos tipos de sensores. Reúne las mediciones en una interfaz de consulta y visualización para facilitar el seguimiento de las condiciones de un ambiente y la interpretación de la información registrada."
     },
     {
-      "description": "Sistema encargado de recibir, almacenar, administrar y visualizar datos de distintos tipos de sensores."
+      "description": "Sistema de seguimiento de flotas y vendedores que centraliza la administración de itinerarios. Organiza la información de los recorridos en un mismo lugar para facilitar la planificación de las actividades y el seguimiento del trabajo en campo."
+    },
+    {
+      "description": "Sistema de trazabilidad de limpieza de habitaciones y ambientes. Organiza la información de las tareas de limpieza para facilitar su consulta y seguimiento, aportando una visión del trabajo realizado en cada espacio y un registro para revisar su historial."
+    },
+    {
+      "description": "Sistema de tickets y alertas sobre el estado de dispensadores de mano. Centraliza los avisos y las incidencias para facilitar su seguimiento y organizar la atención de los equipos, conectando la información de cada dispensador con las tareas que requieren intervención."
     }
   ]
 }

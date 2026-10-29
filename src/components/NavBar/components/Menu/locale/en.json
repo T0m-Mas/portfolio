@@ -2,5 +2,7 @@
   "start": "Home",
   "projects": "Projects",
   "technologies": "Technologies",
-  "contact": "Contact"
+  "contact": "Contact",
+  "openMenu": "Open navigation menu",
+  "closeMenu": "Close navigation menu"
 }
