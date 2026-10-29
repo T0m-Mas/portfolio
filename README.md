@@ -11,7 +11,7 @@ La página `/contact` permite enviar nombre, apellido, email y mensaje en españ
 
 Sin configuración el formulario informa que está temporalmente indisponible y ofrece un enlace al email. Solo se confirma el envío cuando Resend acepta el mensaje; la entrega final debe comprobarse en el buzón o en Resend.
 
-El endpoint limita el tamaño de las solicitudes, valida los campos e incluye un campo trampa, una espera de 60 segundos entre intentos por IP (también si falla el proveedor) y un límite de cinco intentos por diez minutos e IP. Las respuestas indican la espera mediante `Retry-After`. El formulario muestra una cuenta regresiva, bloquea el botón y conserva la espera al recargar o abrir otra pestaña. El límite del servidor vive en memoria de cada instancia y se reinicia con ella; para varias instancias debe complementarse con un límite compartido en el alojamiento. El proxy del alojamiento debe establecer `x-forwarded-for` de forma confiable.
+El endpoint limita el tamaño de las solicitudes, valida los campos e incluye un campo trampa, una espera de 60 segundos entre intentos por IP (también si falla el proveedor) y un límite de cinco intentos por diez minutos e IP. Las respuestas indican la espera mediante `Retry-After`. El formulario bloquea el botón y conserva la espera al recargar o abrir otra pestaña, sin mostrar el tiempo restante al visitante. El límite del servidor vive en memoria de cada instancia y se reinicia con ella; para varias instancias debe complementarse con un límite compartido en el alojamiento. El proxy del alojamiento debe establecer `x-forwarded-for` de forma confiable.
 
 ## Getting Started
 

@@ -1,8 +1,8 @@
 import ProjectsScreen from "@/screen/Projects";
 
 export const metadata = {
-  title: "Home",
-  description: "Welcome to my portfolio website!",
+  title: "Proyectos - T0m-Mas",
+  description: "Desarrollador Fullstack",
 };
 
 export default function Projects() {
